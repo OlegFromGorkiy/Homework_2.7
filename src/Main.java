@@ -47,8 +47,11 @@ public class Main {
         }
         System.out.println("***");
         SuperMarket superMarket = new SuperMarket();
-        for (int i = 0; i < 15; i++) {
-            superMarket.work(superMarket.generateName());
+        for (int i = 0; i < 30; i++) {
+            superMarket.add(superMarket.generateName());
+            if (i % 3 == 0) {
+                superMarket.remove();
+            }
         }
     }
 }

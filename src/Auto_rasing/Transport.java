@@ -98,7 +98,7 @@ public abstract class Transport implements Competetable {
             mechanics.add(m);
             //return true;
         } else {
-            System.out.println(String.format("%s %s can't work with this transport type!",
+            System.out.println(String.format("%s %s can't add with this transport type!",
                     m.getFirstName(), m.getLastName()));
             // return false;
         }
